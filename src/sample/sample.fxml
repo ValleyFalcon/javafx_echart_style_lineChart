@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <LineChart>
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
+               <image>
+                  <Image url="@images/data.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets right="100.0" top="10.0" />
+               </StackPane.margin>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
+               <image>
+                  <Image url="@images/download.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets right="50.0" top="10.0" />
+               </StackPane.margin>
+            </ImageView>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TableView prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                        <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
+                           <image>
+                              <Image url="@images/export%20to%20excel.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="80.0" top="3.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
+                           <image>
+                              <Image url="@images/closeBtn.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="40.0" top="5.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <StackPane prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <LineChart minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="600.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </StackPane>
+   </bottom>
+</BorderPane>
